@@ -1,0 +1,139 @@
+@import 'styles/globals.scss';
+
+.Mint {
+  position: relative;
+  padding: 0 1.6rem;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 6rem 3rem 6rem 12rem;
+  }
+
+  &_background {
+    @include styleBackground();
+  }
+
+  &_wrapper {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+  }
+
+  &_title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: $white;
+    font-family: Press-Start-2p-Regular;
+    margin-bottom: 4.5rem;
+  }
+
+  &_image {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 28rem;
+    margin-bottom: 1.2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+    text-align: center;
+    font-family: Press-Start-2p-Regular;
+
+    span {
+      color: $electric-violet;
+    }
+  }
+
+  &_tokens {
+    max-width: 48rem;
+    width: 100%;
+
+    .Mint_description {
+      text-align: left;
+    }
+  }
+
+  &_bar {
+    position: relative;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 100%;
+    background: linear-gradient(180deg, $grape 0%, $blue-gem 100%);
+    margin: 1rem 0 2.8rem;
+
+    &_process {
+      position: absolute;
+      height: 100%;
+      background: linear-gradient(180deg, #9123FF 0%, #D323FF 100%);
+      border-radius: 1rem;
+    }
+  }
+
+  &_input {
+    max-width: 48rem;
+    width: 100%;
+    background: rgba($black, 0.4);
+    border: 1px solid $electric-violet;
+    position: relative;
+    margin: 7rem 0 1.5rem;
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      height: 4.5rem;
+      text-align: center;
+      color: $white;
+      font-size: 1.6rem;
+      background: transparent;
+    }
+
+    button {
+      width: 9rem;
+      height: 3.5rem;
+      position: absolute;
+      top: 50%;
+      right: .6rem;
+      transform: translateY(-50%);
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: url('../../assets/images/bg-button.png');
+      background-size: cover;
+      background-position: center;
+      color: $white;
+    }
+  }
+
+  &_quick {
+    width: 100%;
+
+    .Mint_description {
+      text-align: left;
+      max-width: 48rem;
+      margin: auto;
+      width: 100%;
+    }
+
+    &_list {
+      max-width: 47rem;
+      width: 100%;
+      margin: 1.5rem auto 0;
+
+      &_item {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: $white;
+        text-align: center;
+        font-family: Press-Start-2p-Regular;
+      }
+    }
+  }
+}

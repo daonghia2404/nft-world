@@ -1,7 +1,26 @@
-import '../styles/globals.css'
+import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import Header from "containers/Header";
+import Footer from "containers/Footer";
+import Socials from "containers/Socials";
 
-export default MyApp
+import "styles/normalize.css";
+import "styles/pure-style.css";
+import "styles/globals.scss";
+
+const App = ({ Component, pageProps }) => {
+  return (
+    <div>
+      <Head>
+        <title>NFT World</title>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
+      <Header />
+      <Socials />
+      <Component {...pageProps} />
+      <Footer />
+    </div>
+  );
+};
+
+export default App;

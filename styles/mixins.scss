@@ -1,0 +1,29 @@
+@mixin styleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &_image {
+    height: 100%;
+
+    span {
+      height: 100% !important;
+    }
+
+    &>div {
+      transform: scale(1.1) !important;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      min-height: 100vh;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

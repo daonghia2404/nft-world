@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Super-Mario-Bros-2, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #000;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+ul {
+  list-style: none;
+}

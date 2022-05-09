@@ -1,0 +1,69 @@
+@import 'styles/globals.scss';
+
+.Video {
+  position: relative;
+  padding: 0 1.6rem;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 6rem 3rem 6rem 12rem;
+  }
+
+  &_background {
+    @include styleBackground();
+  }
+
+  &_wrapper {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+  }
+
+  &_video {
+    border-radius: 2.4rem;
+    position: relative;
+    padding: 1.5rem;
+    max-width: 99.6rem;
+    width: 100%;
+    background: $bleached-cedar;
+    margin-bottom: 4.5rem;
+
+    &_logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 54rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &_source {
+      border-radius: 2.4rem;
+      overflow: hidden;
+
+      video {
+        width: 100%;
+      }
+    }
+
+    &_description {
+      padding-top: 1.5rem;
+    }
+  }
+
+  &_description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+    text-align: center;
+    font-family: Press-Start-2p-Regular;
+
+    span {
+      color: $electric-violet;
+    }
+  }
+}

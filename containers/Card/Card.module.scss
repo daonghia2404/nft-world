@@ -1,0 +1,114 @@
+@import 'styles/globals.scss';
+
+.Card {
+  position: relative;
+  padding: 6rem 3rem 6rem 12rem;
+  overflow: hidden;
+
+  &_item {
+    &:first-child {
+      flex: 0 0 45%;
+      max-width: 45%;
+      margin-right: 3rem;
+
+      .Card_label {
+        left: 90%;
+        top: 2rem;
+      }
+    }
+
+    &:last-child {
+      flex: 1;
+
+      .Card_label {
+        right: 90%;
+        bottom: 0rem;
+      }
+    }
+
+    @media (max-width: 991px) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      margin-right: 0 !important;
+
+      &:not(:last-child) {
+        margin-bottom: 8rem;
+      }
+    }
+  }
+
+  &_background {
+    @include styleBackground();
+  }
+
+  &_description {
+    color: $white;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  &_wrapper {
+    z-index: 2;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &_image {
+    max-width: 59rem;
+    width: 100%;
+    margin: 0 auto 6rem;
+    transform-style: preserve-3d;
+    height: 62rem;
+    display: flex;
+
+    @media (max-width: 991px) {
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 auto 12rem;
+    }
+
+    video,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin: auto;
+    }
+
+    &.video {
+      @media (max-width: 991px) {
+        height: 65rem;
+      }
+    }
+
+    video {
+      border-radius: 3rem;
+      border: 2px solid $white;
+    }
+
+    &:hover {
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  &_label {
+    position: absolute;
+    transform: translateZ(4rem);
+
+    @media (max-width: 768px) {
+      top: unset !important;
+      right: unset !important;
+      left: 50% !important;
+      bottom: 0 !important;
+      transform: translate(-50%, 50%);
+    }
+  }
+}

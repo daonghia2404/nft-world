@@ -1,0 +1,107 @@
+@import 'styles/globals.scss';
+
+.Join {
+  position: relative;
+  padding: 6rem 3rem 6rem 12rem;
+  overflow: hidden;
+
+  &_background {
+    @include styleBackground();
+  }
+
+  &_item {
+    &:first-child {
+      flex: 0 0 45%;
+      max-width: 45%;
+      margin-right: 3rem;
+    }
+
+    &:last-child {
+      flex: 1;
+    }
+
+    @media (max-width: 991px) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      margin-right: 0 !important;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &_wrapper {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+  }
+
+  &_number {
+    text-align: center;
+    font-size: 3.8rem;
+    color: $white;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 0px $bay-of-many;
+    margin-bottom: 1.5rem;
+    transform: translateX(3rem);
+  }
+
+  &_video {
+    border-radius: 2.4rem;
+    position: relative;
+    padding: 1.5rem;
+    max-width: 99.6rem;
+    width: 100%;
+    background: $bleached-cedar;
+    margin-bottom: 4.5rem;
+
+    @media (max-width: 991px) {
+      margin: 0 auto 4.5rem;
+    }
+
+    &_source {
+      border-radius: 2.4rem;
+      overflow: hidden;
+
+      video {
+        width: 100%;
+      }
+    }
+
+    &_description {
+      padding-top: 1.5rem;
+    }
+  }
+
+  &_join {
+    width: 100%;
+    max-width: 15.6rem;
+    margin: 0 auto 2.6rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_nft {
+    width: 100%;
+    max-width: 30.3rem;
+    margin: 0 auto 3.2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+    font-family: Press-Start-2p-Regular;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
+}
