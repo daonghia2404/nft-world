@@ -13,11 +13,11 @@ import styles from './Footer.module.scss';
 
 const Footer = () => {
   const dataFooter = [
-    // { link: '#', icon: IconFacebook },
+    { link: '#', icon: IconFacebook },
     { link: '#', icon: IconTwitter },
-    // { link: '#', icon: IconTelegram },
-    // { link: '#', icon: IconTiktok },
-    // { link: '#', icon: IconYoutube },
+    { link: '#', icon: IconTelegram },
+    { link: '#', icon: IconTiktok },
+    { link: '#', icon: IconYoutube },
     { link: '#', icon: IconDiscord },
   ]
   return (

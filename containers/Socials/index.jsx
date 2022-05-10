@@ -13,13 +13,13 @@ import Img from "components/Img";
 
 const Socials = () => {
   const dataSocials = [
-    // { link: "#", icon: IconFacebook },
+    { link: "#", icon: IconFacebook },
     { link: "#", icon: IconTwitter },
-    // { link: "#", icon: IconTelegram },
-    // { link: "#", icon: IconTiktok },
-    // { link: "#", icon: IconYoutube },
+    { link: "#", icon: IconTelegram },
+    { link: "#", icon: IconTiktok },
+    { link: "#", icon: IconYoutube },
     { link: "#", icon: IconDiscord },
-    // { link: "#", icon: IconMore },
+    { link: "#", icon: IconMore },
   ];
   return (
     <div className={styles.Socials}>
